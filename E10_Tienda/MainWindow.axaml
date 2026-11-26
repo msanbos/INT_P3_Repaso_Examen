@@ -1,0 +1,18 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="380" d:DesignHeight="400"
+        x:Class="E10_Tienda.MainWindow"
+        Title="Tienda · Producto" Width="380" Height="400"
+        Background="#F3F6FA">
+    <StackPanel Margin="24" Spacing="12">
+        <TextBlock Text="Auriculares Zeta" FontSize="26" FontWeight="Bold" Foreground="#1F4E79" />
+        <TextBlock Text="Precio: 49,90 €" FontSize="16" Foreground="#2E7D32" />
+        <TextBox Watermark="Cupón de descuento" MaxLength="8" Width="200" HorizontalAlignment="Left" />
+        <TextBlock Text="Unidades" FontSize="12" Foreground="#57606A" />
+        <Slider Minimum="1" Maximum="5" Value="2" TickFrequency="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight" />
+        <CheckBox Content="Incluir envío exprés" IsChecked="True" />
+        <Button Content="Comprar ahora" Width="140" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Background="#1F4E79" Foreground="#FFFFFF"/>
+    </StackPanel>
+</Window>
