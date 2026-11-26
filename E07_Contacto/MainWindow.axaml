@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="520" d:DesignHeight="440"
+        x:Class="E07_Contacto.MainWindow"
+        Title="Contacto" Width="520" Height="440">
+    <Grid Margin="20" ColumnDefinitions="100,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+        <!-- E07: los controles están desordenados: colócalos como en la figura -->
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Contacto" FontSize="24" FontWeight="Bold" Margin="0,0,0,16" HorizontalAlignment="Center" />
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Nombre"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="NombreBox" Margin="0,0,0,8"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Correo"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="CorreoBox" Margin="0,0,0,8"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Asunto"/>
+        <ComboBox Grid.Row="3" Grid.Column="1" x:Name="AsuntoBox" SelectedIndex="0"
+                  HorizontalAlignment="Stretch" Margin="0,0,0,8">
+            <ComboBoxItem Content="Consulta"/>
+            <ComboBoxItem Content="Incidencia"/>
+            <ComboBoxItem Content="Sugerencia"/>
+        </ComboBox>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Mensaje" Margin="0,8,0,0" VerticalAlignment="Top" />        
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="MensajeBox" AcceptsReturn="True" TextWrapping="Wrap" Height="100"/>
+
+
+        <StackPanel Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal" Spacing="8" Margin="0,16,0,0" HorizontalAlignment="Right">
+            <Button Content="Cancelar"/>
+            <Button Content="Enviar"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>
