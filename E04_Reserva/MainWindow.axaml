@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="420" d:DesignHeight="560"
+        x:Class="E04_Reserva.MainWindow"
+        Title="Reserva de sala" Width="420" Height="560">
+    <ScrollViewer>
+        <StackPanel Margin="20" Spacing="10">
+            <TextBlock Text="Reserva de sala" FontSize="22" FontWeight="Bold"/>
+            <!-- E04: añade aquí los controles que pide el enunciado -->
+            <TextBlock Text="Nombre del solicitante"/>
+            <TextBox/>
+            <TextBlock Text="Fecha de la reserva"/>
+            <DatePicker/>
+            <TextBlock Text="Hora de inicio"/>
+            <TimePicker/>
+            <TextBlock Text="Número de asistentes (entero de 1 a 50)" />
+            <NumericUpDown Minimum="1" Maximum="50" />
+            <TextBlock Text="Sala: Sala A, Sala B o Sala C (solo una, ocupando poco espacio)" />
+            <ComboBox SelectedIndex="0">
+                <ComboBoxItem Content="Sala A"/>
+                <ComboBoxItem Content="Sala B"/>
+                <ComboBoxItem Content="Sala C"/>
+            </ComboBox>    
+            <TextBlock Text="Si necesita proyector (sí o no)"/>
+            <CheckBox Content="Necesita Proyector"/>
+            <TextBlock Text="Observaciones (texto de varias líneas)" />
+            <TextBox AcceptsReturn="True" TextWrapping="Wrap" Height="80" />
+            <TextBlock Text="Botón con el texto -Reservar-"/>
+            <Button Content="Reservar"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
+
