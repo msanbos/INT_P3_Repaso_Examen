@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="380" d:DesignHeight="260"
+        x:Class="E20_Formulario.MainWindow"
+        Title="Envío" Width="380" Height="260">
+    <StackPanel Margin="20" Spacing="10">
+        <TextBlock Text="Envío de datos" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="NombreBox" Watermark="Nombre"/>
+        <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button x:Name="EnviarBoton" Content="Enviar"/>
+            <Button x:Name="LimpiarBoton" Content="Limpiar"/>
+        </StackPanel>
+        <TextBlock x:Name="Resultado" FontSize="16"/>
+    </StackPanel>
+</Window>
